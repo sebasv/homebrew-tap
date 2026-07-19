@@ -1,25 +1,25 @@
 class Doorman < Formula
   desc "Front any static-token or no-auth HTTP service with the OAuth 2.1 flow Claude requires — in one binary. No IdP, no database."
   homepage "https://github.com/sebasv/doorman"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/sebasv/doorman/releases/download/v0.1.0/doorman-aarch64-apple-darwin.tar.xz"
-      sha256 "8a28b0386716312e909a973d7d71e468ae7570d28c08dee7467c683625d574ad"
+      url "https://github.com/sebasv/doorman/releases/download/v0.2.0/doorman-aarch64-apple-darwin.tar.xz"
+      sha256 "ea6d16ad463ac62dd6748743043252996c975a091d9eb151f65e2bdd69b3b0b7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sebasv/doorman/releases/download/v0.1.0/doorman-x86_64-apple-darwin.tar.xz"
-      sha256 "d0d6e04d8433297327bd5ce7237d807949263f30c2dad9d6f1ec6308b8872cb3"
+      url "https://github.com/sebasv/doorman/releases/download/v0.2.0/doorman-x86_64-apple-darwin.tar.xz"
+      sha256 "54c034c73bb12c351bd0f9e029f5a7407ee09101ef45ceecc790b6ad46a742ba"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/sebasv/doorman/releases/download/v0.1.0/doorman-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "1f2583ef1754b2a194ea6db6bf20320d5194a1ca612d714dbeca9480d7b0fa04"
+      url "https://github.com/sebasv/doorman/releases/download/v0.2.0/doorman-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f5c812f76f40231237669faea765013258b715d9f3388057eb373ffdf448cb0f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/sebasv/doorman/releases/download/v0.1.0/doorman-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "415b021dd59177eaa679548e1a3da16440abf430a27624adaf761059a19f4c6d"
+      url "https://github.com/sebasv/doorman/releases/download/v0.2.0/doorman-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "5099c825d7eb4b0de36ae1a465d6b3d0b41cf7a71f1bb6a2fdcef30fcbad379f"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
